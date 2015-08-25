@@ -13,7 +13,8 @@ class MenuController
     puts "2 - Create an entry"
     puts "3 - Search for an entry"
     puts "4 - Import entries from a CSV"
-    puts "5 - Exit"
+    puts "5 - New entry"
+    puts "6 - Exit"
     print "Enter your selection: "
 
     selection = gets.to_i
@@ -44,6 +45,8 @@ class MenuController
         main_menu
     end
   end
+
+
 
   def view_all_entries
     @address_book.entries.each do |entry|
